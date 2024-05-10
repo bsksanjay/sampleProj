@@ -16,17 +16,17 @@ public class sample {
 		drv = new FirefoxDriver();
 		drv.manage().window().maximize();
 		
-//		WebDriver drv;									
-//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sbrahmandlapally\\Desktop\\Desktop\\Deloitte docs\\chromedriver_win32\\chromedriver.exe");
-//		drv = new ChromeDriver();
-//		drv.manage().window().maximize();
+		WebDriver drv1;									
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sbrahmandlapally\\Desktop\\Desktop\\Deloitte docs\\chromedriver_win32\\chromedriver.exe");
+		drv = new ChromeDriver();
+		drv.manage().window().maximize();
 		drv.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		drv.findElement(By.xpath("//input[@type='search']")).sendKeys("Tom");
 		Thread.sleep(2000);
 		String count = "3";
-		//String s1 = drv.findElement(By.xpath("//input[@type='number']")).getText();
-		String s1 = drv.findElement(By.xpath("//input[@type='number']")).getAttribute("value");
+		String s1 = drv.findElement(By.xpath("//input[@type='number']")).getText();
+		String s2 = drv.findElement(By.xpath("//input[@type='number']")).getAttribute("value");
 		
 		System.out.println("attribut value "+s1);
 		

@@ -24,7 +24,7 @@ public class amazon2 {
 		for (WebElement e: lst) {
 			System.out.println(e.getText());
 			System.out.println("122");
-			System.out.println("1355");
+
 			
 		}
 		
