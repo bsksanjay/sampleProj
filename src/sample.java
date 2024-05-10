@@ -27,6 +27,7 @@ public class sample {
 		String count = "3";
 		String s1 = drv.findElement(By.xpath("//input[@type='number']")).getText();
 		String s2 = drv.findElement(By.xpath("//input[@type='number']")).getAttribute("value");
+		String s3 = drv.findElement(By.xpath("//input[@type='number']")).getAttribute("value");
 		
 		System.out.println("attribut value "+s1);
 		
