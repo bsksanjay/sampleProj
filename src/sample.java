@@ -31,6 +31,9 @@ public class sample {
 		
 		System.out.println("attribut value "+s1);
 		
+		System.out.println("attribut value "+s1);
+		System.out.println("attribut value "+s1);
+		
 		int icount = Integer.parseInt(count);
 		int is1 = Integer.parseInt(s1);
 		 for (int j=is1;j<icount;j++) {
